@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="an">
+
+<head>
+    <meta charset=" ÜTF-8">
+    <meta name="viewpoint" content ="width=devide.width", intial-scale="1.0">
+    <title> Простачкаа </title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ensure the container takes the full height of the viewport */
+            margin: 0; /* Remove default margin */
+        }
+
+        .center-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="center-container">
+<h1 id="title">DOM</h1>
+<ul>
+    <li id="list1">DOM properties</li>
+    <li>DOM Metods</li>
+    <li>DOM Events</li>
+</ul>
+<button onclick="alert(`Ествествено, мила! \n Искаш ли да се напием?`)">Разбери сега!</button>
+</div>
+<script> 
+function edit(element, match, replace){
+    let content = element.textContent;
+    element.textContent= content.split(match).join(replace);
+}
+</script>
+</body>
+</html>
