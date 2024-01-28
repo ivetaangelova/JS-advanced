@@ -3,7 +3,7 @@ function solve() {
 
    function onClick() {
       const textarea =document.querySelector(`#inputs textarea`).value
-      const inputArray = textarea.value.split('\n').filter(line => line.trim() !== '');
+      const inputArray = JSON.parse(textarea.value.split('\n').filter(line => line.trim() !== ''));
 
       const bestRestaurantObj = processInput(inputArray);
 
